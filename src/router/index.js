@@ -1,5 +1,6 @@
 import HelloWorld from '../views/HelloWorld';
 import Test from '../views/Test';
+import List from '../views/List'
 
 //routes
 export default [
@@ -12,5 +13,10 @@ export default [
     path: '/test',
     name: 'Test',
     component: Test
+    },
+    {
+    path: '/list',
+    name: 'Liste',
+    component: List
     }
 ]

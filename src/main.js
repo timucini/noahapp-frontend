@@ -4,11 +4,14 @@ import VueRouter from 'vue-router';
 import storeAttributes from "./store/index";
 import Vuex from 'vuex';
 import routes from "./router/index";
+import Vuetify from 'vuetify'
+import vuetify from './plugins/vuetify';
 
 Vue.config.productionTip = false;
 
 Vue.use(VueRouter);
 Vue.use(Vuex);
+Vue.use(Vuetify);
 
 var router = new VueRouter({
   mode: 'history',
@@ -19,5 +22,7 @@ var store = new Vuex.Store(storeAttributes);
 new Vue({
   router,
   store,
-  render: h => h(App),
+  vuetify: new Vuetify(),
+  vuetify,
+  render: h => h(App)
 }).$mount('#app');

@@ -1,0 +1,51 @@
+{
+    "1": {
+        "category": "SailingBoat",
+        "name": "Sailing-boat1",
+        "place": "Berlin",
+        "height": "3m",
+        "maxPersons": "4",
+        "length": "4,5m"
+    },
+    "2": {
+        "category": "SailingBoat",
+        "name": "Sailing-boat2",
+        "place": "Berlin",
+        "height": "3m",
+        "maxPersons": "4",
+        "length": "4,5m"
+    },
+    "3": {
+        "category": "SailingBoat",
+        "name": "Sailing-boat3",
+        "place": "Berlin",
+        "height": "3m",
+        "maxPersons": "4",
+        "length": "4,5m"
+    },
+    "4": {
+        "category": "Catamaran",
+        "name": "Catamaran1",
+        "place": "Berlin",
+        "height": "3m",
+        "maxPersons": "4",
+        "length": "4,5m"
+    },
+    "5": {
+        "category": "Catamaran",
+        "name": "Catamaran2",
+        "place": "Berlin",
+        "height": "3m",
+        "maxPersons": "4",
+        "length": "4,5m"
+    },
+    "6": {
+        "category": "Catamaran",
+        "name": "Catamaran3",
+        "place": "Berlin",
+        "height": "3m",
+        "maxPersons": "4",
+        "length": "4,5m"
+    }
+}
+         
