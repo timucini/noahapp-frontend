@@ -7,7 +7,6 @@ import router from "./router";
 import Vuetify from 'vuetify/lib'
 import vuetify from './plugins/vuetify';
 
-
 Vue.config.productionTip = false;
 
 Vue.use(VueRouter);

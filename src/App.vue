@@ -1,22 +1,21 @@
 <template>
-  <v-app>
-    <v-app-bar app>
-     <div>Test</div>
-    </v-app-bar>
-
-    <v-content>
-      <router-view/>
-    </v-content>
-  </v-app>
+  <div id="app">
+    <MenuNavigation></MenuNavigation>
+    <router-view></router-view>
+    <Footer></Footer>
+  </div>
 </template>
 
 <script>
-import AppHeader from "./components/AppHeader"
+import MenuNavigation from "./components/MenuNavigation.vue"
+import Footer from "./components/Footer.vue"
+
 
 export default {
   name: 'App',
   components: {
-    AppHeader
+    MenuNavigation,
+    Footer
   },
   data: () => ({
     //
