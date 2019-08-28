@@ -8,17 +8,18 @@
                 <div class="header-top-inner clearfix">
                     <div class="top-left">
                         <ul class="clearfix">
-                            <li><span class="icon fa fa-phone"></span> +12 123 456 789</li>
-                            <li><span class="icon fa fa-envelope"></span> info@travelport.com</li>
+                            <li><span class="icon fa fa-phone"></span> +43 30 45454454</li>
+                            <li><span class="icon fa fa-envelope"></span> info@noahapp.com</li>
                             
-                            <li class="language dropdown"><a class="btn btn-default dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="#">$ Usd<span class="icon fa fa-caret-down"></span></a>
+                    <!--        <li class="language dropdown"><a class="btn btn-default dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="#">$ Usd<span class="icon fa fa-caret-down"></span></a>
                                 <ul class="dropdown-menu style-one" aria-labelledby="dropdownMenu2">
                                     <li><a href="#">Australia</a></li>
                                     <li><a href="#">kuwait</a></li>
                                     <li><a href="#">Canada</a></li>
                                 </ul>
                             </li>
-                            
+                    -->
+                    <!--        
                             <li class="language dropdown"><a class="btn btn-default dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="#"><span class="fa fa-globe"></span>&ensp; English<span class="icon fa fa-caret-down"></span></a>
                                 <ul class="dropdown-menu style-one" aria-labelledby="dropdownMenu1">
                                     <li><a href="#">German</a></li>
@@ -26,6 +27,7 @@
                                     <li><a href="#">Hindi</a></li>
                                 </ul>
                             </li>
+                    -->
                         </ul>
                     </div>
                     <div class="top-right clearfix">
@@ -44,7 +46,7 @@
                 <div class="clearfix">
                     
                     <div class="pull-left logo-outer">
-                        <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a></div>
+                        <div class="logo"><a href="index.html"><img src="../../src/assets/images/logonoah2.jpg" alt="" title=""></a></div>
                     </div>
                     
                     <div class="nav-outer clearfix">
@@ -65,12 +67,6 @@
                                         <ul>
                                             <li><a href="index.html">Homepage One</a></li>
                                             <li><a href="index-2.html">Homepage Two</a></li>
-                                            <li class="dropdown"><a href="#">Header Styles</a>
-                                                <ul>
-                                                    <li><a href="index.html">Header Style One</a></li>
-                                                    <li><a href="index-2.html">Header Style Two</a></li>
-                                                </ul>
-                                            </li>
                                         </ul>
                                     </li>
                                     <li class="dropdown"><a href="#">About Us</a>
@@ -79,12 +75,12 @@
                                             <li><a href="dashboard.html">Dashboard</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown"><a href="#">Hotels</a>
+                                    <li class="dropdown"><a href="#">Boats</a>
                                         <ul>
-                                            <li><a href="hotel-grid.html">Hotels Grid</a></li>
-                                            <li><a href="hotel-list.html">Hotels List</a></li>
-                                            <li><a href="hotel-detail.html">Hotels Single</a></li>
-                                            <li><a href="hotel-booking.html">Hotels Booking</a></li>
+                                            <li><a href="hotel-grid.html">Boats Grid</a></li>
+                                            <li><a href="hotel-list.html">Boats List</a></li>
+                                            <li><a href="hotel-detail.html">Boats Single</a></li>
+                                            <li><a href="hotel-booking.html">Boats Booking</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="submission.html">Submission</a></li>
@@ -104,9 +100,6 @@
                 </div>
             </div>
             
-            <div class="upload-icon">
-                <a href="#"><span class="icon fa fa-upload"></span></a>
-            </div>
             
         </div>
         <!--End Header Upper-->
@@ -116,7 +109,7 @@
             <div class="auto-container clearfix">
                 <!--Logo-->
                 <div class="logo pull-left">
-                    <a href="index.html" class="img-responsive"><img src="images/logo-small.png" alt="" title=""></a>
+                    <a href="index.html" class="img-responsive"><img src="../../src/assets/images/logonoah2.jpg" alt="" title=""></a>
                 </div>
                 
                 <!--Right Col-->
@@ -138,12 +131,6 @@
                                     <ul>
                                         <li><a href="index.html">Homepage One</a></li>
                                         <li><a href="index-2.html">Homepage Two</a></li>
-                                        <li class="dropdown"><a href="#">Header Styles</a>
-                                            <ul>
-                                                <li><a href="index.html">Header Style One</a></li>
-                                                <li><a href="index-2.html">Header Style Two</a></li>
-                                            </ul>
-                                        </li>
                                     </ul>
                                 </li>
                                 <li class="dropdown"><a href="#">About Us</a>
@@ -154,10 +141,10 @@
                                 </li>
                                 <li class="dropdown"><a href="#">Hotels</a>
                                     <ul>
-                                        <li><a href="hotel-grid.html">Hotels Grid</a></li>
-                                        <li><a href="hotel-list.html">Hotels List</a></li>
-                                        <li><a href="hotel-detail.html">Hotels Single</a></li>
-                                        <li><a href="hotel-booking.html">Hotels Booking</a></li>
+                                        <li><a href="hotel-grid.html">boats Grid</a></li>
+                                        <li><a href="hotel-list.html">boats List</a></li>
+                                        <li><a href="hotel-detail.html">boats Single</a></li>
+                                        <li><a href="hotel-booking.html">boats Booking</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="submission.html">Submission</a></li>

@@ -5,7 +5,7 @@
         <div class="tp-banner-container">
             <div class="tp-banner">
                 <ul>
-                    <img src="../../public/images/main-slider/image-2.jpg"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"> 
+                    <img src="../../src/assets/images/boats/boat2.jpg"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"> 
                     <div class="overlay-slide">
                     </div>
                     <div class="tp-caption sfl sfb tp-resizeme">
