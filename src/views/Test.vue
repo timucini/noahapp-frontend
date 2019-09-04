@@ -4,35 +4,7 @@
     <section class="page-title" style="background-image:url(images/background/4.jpg);">
         <div class="auto-container">
             
-            <!--Search Form-->
-            <div class="search-form">
-                <form method="post" action="contact.html">
-                    <div class="clearfix">
-                        <div class="form-group col-md-4 col-sm-6 col-xs-12">
-                            <input type="text" name="fname" value="" placeholder="Search by city, locality, hotel name" required>
-                        </div>
-                        <div class="form-group col-md-2 col-sm-6 col-xs-12">
-                            <input type="text" class="datepicker" name="lname" value="" placeholder="Check In" required>
-                        </div>
-                        <div class="form-group col-md-2 col-sm-6 col-xs-12">
-                            <input type="email" class="datepicker" name="email" value="" placeholder="Check Out" required>
-                        </div>
-                        <!--Form Group-->
-                        <div class="form-group col-md-4 col-sm-6 col-xs-12">
-                            <select class="custom-select-box">
-                                <option>1 Adult, 1 Room</option>
-                                <option>1 Adult, 2 Room</option>
-                                <option>1 Adult, 3 Room</option>
-                            </select>
-                        </div>
-                        <div class="btn-group">
-                            <button type="submit" class="theme-btn search-btn"><span class="icon fa fa-search"></span></button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <!--End Search Form-->
-            
+            <Search></Search>
             <!--Title Box-->
             <div class="title-box">
             	<ul>
@@ -444,7 +416,7 @@
                         <!-- Search Form -->
                         <div class="sidebar-widget search-box">
                         	<div class="sidebar-title">
-                            	<h3>hotel name</h3>
+                            	<h3>Boat name</h3>
                             </div>
                             <form method="post" action="contact.html">
                                 <div class="form-group">
@@ -535,62 +507,24 @@
                         <!-- Search Form -->
                         <div class="sidebar-widget rating-widget">
                         	<div class="sidebar-title">
-                            	<h3>star rating</h3>
+                            	<h3>boat type</h3>
                             </div>
                             <div class="form-group">
                                 <div class="check-box">
-                                	<input type="checkbox" name="shipping-option" id="account-option-5">&nbsp; <label for="account-option-5">bungalow</label>
+                                	<input type="checkbox" name="shipping-option" id="account-option-5">&nbsp; <label for="account-option-5">sailing</label>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="check-box">
-                                	<input type="checkbox" name="shipping-option" id="account-option-6">&nbsp; <label for="account-option-6">hostel</label>
+                                	<input type="checkbox" name="shipping-option" id="account-option-6">&nbsp; <label for="account-option-6">catamaran</label>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="check-box">
-                                	<input type="checkbox" name="shipping-option" id="account-option-7">&nbsp; <label for="account-option-7">hotel</label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="check-box">
-                                	<input type="checkbox" name="shipping-option" id="account-option-8">&nbsp; <label for="account-option-8">villa</label>
+                                	<input type="checkbox" name="shipping-option" id="account-option-7">&nbsp; <label for="account-option-7">motor</label>
                                 </div>
                             </div>
                         </div>
-                        
-                        <!-- Search Form -->
-                        <div class="sidebar-widget rating-widget">
-                        	<div class="sidebar-title">
-                            	<h3>star rating</h3>
-                            </div>
-                            <div class="form-group">
-                                <div class="check-box">
-                                	<input type="checkbox" name="shipping-option" id="account-option-9">&nbsp; <label for="account-option-9">airport transfer</label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="check-box">
-                                	<input type="checkbox" name="shipping-option" id="account-option-10">&nbsp; <label for="account-option-10">bar</label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="check-box">
-                                	<input type="checkbox" name="shipping-option" id="account-option-11">&nbsp; <label for="account-option-11">nightclub</label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="check-box">
-                                	<input type="checkbox" name="shipping-option" id="account-option-12">&nbsp; <label for="account-option-12">restaurant</label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="check-box">
-                                	<input type="checkbox" name="shipping-option" id="account-option-13">&nbsp; <label for="account-option-13">swimming pool</label>
-                                </div>
-                            </div>
-                        </div>
-                        
                     </aside>
                 </div>
                 
@@ -639,12 +573,15 @@
     </div>
 </template>
 
-
 <script>
 import {mapGetters} from 'vuex';
 import exampleList from '../assets/datasrc/example.json';
+import Search from '../components/SearchBar';
 
 export default {
+    comments: {
+        Search
+    },
     computed: {
         ...mapGetters(['TESTLIST']),
     }, 

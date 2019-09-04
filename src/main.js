@@ -6,13 +6,14 @@ import Vuex from 'vuex';
 import router from "./router";
 import Vuetify from 'vuetify/lib'
 import vuetify from './plugins/vuetify';
-
+import Vuelidate from 'vuelidate';
+ 
 Vue.config.productionTip = false;
 
 Vue.use(VueRouter);
 Vue.use(Vuex);
 Vue.use(Vuetify);
-
+Vue.use(Vuelidate)
 var store = new Vuex.Store(storeAttributes);
 
 

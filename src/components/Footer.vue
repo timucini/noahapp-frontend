@@ -18,7 +18,7 @@
                                         <ul class="list-style-one">
                                             <li><span class="icon fa fa-map-marker"></span>1945 Washington, San Francisco</li>
                                             <li><span class="icon fa fa-phone"></span>+1 234 456 7890</li>
-                                            <li><span class="icon fa fa-envelope"></span>hello@siteinfo.com</li>
+                                            <li><span class="icon fa fa-envelope"></span>hello@noah.com</li>
                                         </ul>
                                         <ul class="social-icon-one">
                                             <li><a href="#"><span class="fa fa-facebook"></span></a></li>
@@ -107,10 +107,10 @@
             <div class="auto-container">
                 <div class="row clearfix">
                     <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="copyright">Copyright &copy; 2017 <span class="theme_color"><a href="#">Travel Port.</a></span> All Rights Reserved.</div>
+                        <div class="copyright">Copyright &copy; 2019 <span class="theme_color"><a href="#">FragNoah</a></span> All Rights Reserved.</div>
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="designed">Design by <span class="theme_color"><a href="#">ThemePattern</a></span></div>
+                        <div class="designed">Design by <span class="theme_color"><a href="#">Timur Burkholz</a></span></div>
                     </div>
                 </div>
             </div>

@@ -1,47 +1,9 @@
 <template>
         <!-- Main Header-->
     <header class="main-header">
-    
-        <!--Header Top-->
-        <div class="header-top">
-            <div class="auto-container">
-                <div class="header-top-inner clearfix">
-                    <div class="top-left">
-                        <ul class="clearfix">
-                            <li><span class="icon fa fa-phone"></span> +43 30 45454454</li>
-                            <li><span class="icon fa fa-envelope"></span> info@noahapp.com</li>
-                            
-                    <!--        <li class="language dropdown"><a class="btn btn-default dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="#">$ Usd<span class="icon fa fa-caret-down"></span></a>
-                                <ul class="dropdown-menu style-one" aria-labelledby="dropdownMenu2">
-                                    <li><a href="#">Australia</a></li>
-                                    <li><a href="#">kuwait</a></li>
-                                    <li><a href="#">Canada</a></li>
-                                </ul>
-                            </li>
-                    -->
-                    <!--        
-                            <li class="language dropdown"><a class="btn btn-default dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="#"><span class="fa fa-globe"></span>&ensp; English<span class="icon fa fa-caret-down"></span></a>
-                                <ul class="dropdown-menu style-one" aria-labelledby="dropdownMenu1">
-                                    <li><a href="#">German</a></li>
-                                    <li><a href="#">Arabic</a></li>
-                                    <li><a href="#">Hindi</a></li>
-                                </ul>
-                            </li>
-                    -->
-                        </ul>
-                    </div>
-                    <div class="top-right clearfix">
-                        <ul>
-                            <li><a href="register.html"><span class="fa fa-plus"></span>&ensp;Register</a></li>
-                            <li><a href="login.html"><span class="fa fa-lock"></span>&ensp;Login</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
+        
         <!--Header-Upper-->
-        <div class="header-upper">
+        <div class="header-upper" id="main-upper">
             <div class="auto-container">
                 <div class="clearfix">
                     
@@ -83,14 +45,8 @@
                                             <li><a href="hotel-booking.html">Boats Booking</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="submission.html">Submission</a></li>
-                                    <li class="dropdown"><a href="#">Blog</a>
-                                        <ul>
-                                            <li><a href="blog.html">Our Blog</a></li>
-                                            <li><a href="blog-single.html">Blog Single</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="submission.html">Contact us</a></li>
+                                    <li><a href="submission.html"><span class="fa fa-plus"></span>&ensp;Register</a></li>
+                                    <li><a href="submission.html"><span class="fa fa-lock"></span>&ensp;Login</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -105,7 +61,7 @@
         <!--End Header Upper-->
         
         <!--Sticky Header-->
-        <div class="sticky-header">
+        <div class="sticky-header" id="main">
             <div class="auto-container clearfix">
                 <!--Logo-->
                 <div class="logo pull-left">
@@ -139,22 +95,16 @@
                                         <li><a href="dashboard.html">Dashboard</a></li>
                                     </ul>
                                 </li>
-                                <li class="dropdown"><a href="#">Hotels</a>
+                                <li class="dropdown"><a href="#">Boats</a>
                                     <ul>
                                         <li><a href="hotel-grid.html">boats Grid</a></li>
                                         <li><a href="hotel-list.html">boats List</a></li>
                                         <li><a href="hotel-detail.html">boats Single</a></li>
                                         <li><a href="hotel-booking.html">boats Booking</a></li>
                                     </ul>
-                                </li>
-                                <li><a href="submission.html">Submission</a></li>
-                                <li class="dropdown"><a href="#">Blog</a>
-                                    <ul>
-                                        <li><a href="blog.html">Our Blog</a></li>
-                                        <li><a href="blog-single.html">Blog Single</a></li>
-                                    </ul>
-                                </li>
-                                 
+                                </li>                    
+                                <li><a href="submission.html"><span class="fa fa-plus"></span>&ensp;Register</a></li>
+                                <li><a href="submission.html"><span class="fa fa-lock"></span>&ensp;Login</a></li> 
                             </ul>
                         </div>
                     </nav><!-- Main Menu End-->
@@ -167,3 +117,11 @@
     </header>
     <!--End Main Header -->
 </template>
+<style scoped>
+#main {
+    background: 	  #b3d1ff
+}
+#main-upper {
+    background: 	  #b3d1ff;
+}
+</style>
