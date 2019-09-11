@@ -13,7 +13,7 @@
                         <div class="" id="header2">
                             <div class="text" id="title2">Easy and fast with Noah-App</div>
                         </div>
-                    <Search></Search>
+                        <Search></Search>
                     </div>
                 </ul>
             </div>

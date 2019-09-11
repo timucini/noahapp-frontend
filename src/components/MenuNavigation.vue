@@ -8,7 +8,7 @@
                 <div class="clearfix">
                     
                     <div class="pull-left logo-outer">
-                        <div class="logo"><a href="index.html"><img src="../../src/assets/images/logonoah2.jpg" alt="" title=""></a></div>
+                        <div class="logo"><router-link to="/"><img src="../../src/assets/images/logonoah2.jpg" alt="" title=""></router-link></div>
                     </div>
                     
                     <div class="nav-outer clearfix">
@@ -25,28 +25,21 @@
                             
                             <div class="navbar-collapse collapse clearfix">
                                 <ul class="navigation clearfix">
-                                    <li class="current dropdown"><a href="#">Home</a>
-                                        <ul>
-                                            <li><a href="index.html">Homepage One</a></li>
-                                            <li><a href="index-2.html">Homepage Two</a></li>
-                                        </ul>
-                                    </li>
+                                    <li><router-link to="/">Home</router-link></li>
                                     <li class="dropdown"><a href="#">About Us</a>
                                         <ul>
-                                            <li><a href="thankyou.html">Thank You</a></li>
-                                            <li><a href="dashboard.html">Dashboard</a></li>
+                                            <li><router-link to="/thank">Thank you</router-link></li>
+                                            <li><router-link to="/submission">Submission</router-link></li>
+                                            <li><router-link to="/components">Example-Components</router-link></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown"><a href="#">Boats</a>
                                         <ul>
-                                            <li><a href="hotel-grid.html">Boats Grid</a></li>
-                                            <li><a href="hotel-list.html">Boats List</a></li>
-                                            <li><a href="hotel-detail.html">Boats Single</a></li>
-                                            <li><a href="hotel-booking.html">Boats Booking</a></li>
+                                            <li><router-link to="/test">Boat-List</router-link></li>
                                         </ul>
                                     </li>
-                                    <li><a href="submission.html"><span class="fa fa-plus"></span>&ensp;Register</a></li>
-                                    <li><a href="submission.html"><span class="fa fa-lock"></span>&ensp;Login</a></li>
+                                    <li><router-link to="/register"><span class="fa fa-plus"></span>&ensp;Register</router-link></li>
+                                    <li><router-link to="/login"><span class="fa fa-lock"></span>&ensp;Login</router-link></li>
                                 </ul>
                             </div>
                         </nav>
@@ -83,28 +76,21 @@
                         
                         <div class="navbar-collapse collapse clearfix">
 							<ul class="navigation clearfix">
-                                <li class="current dropdown"><a href="#">Home</a>
-                                    <ul>
-                                        <li><a href="index.html">Homepage One</a></li>
-                                        <li><a href="index-2.html">Homepage Two</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown"><a href="#">About Us</a>
-                                    <ul>
-                                        <li><a href="thankyou.html">Thank You</a></li>
-                                        <li><a href="dashboard.html">Dashboard</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown"><a href="#">Boats</a>
-                                    <ul>
-                                        <li><a href="hotel-grid.html">boats Grid</a></li>
-                                        <li><a href="hotel-list.html">boats List</a></li>
-                                        <li><a href="hotel-detail.html">boats Single</a></li>
-                                        <li><a href="hotel-booking.html">boats Booking</a></li>
-                                    </ul>
-                                </li>                    
-                                <li><a href="submission.html"><span class="fa fa-plus"></span>&ensp;Register</a></li>
-                                <li><a href="submission.html"><span class="fa fa-lock"></span>&ensp;Login</a></li> 
+                                <li><router-link to="/">Home</router-link></li>
+                                    <li class="dropdown"><a href="#">About Us</a>
+                                        <ul>
+                                            <li><router-link to="/thank">Thank you</router-link></li>
+                                            <li><router-link to="/submission">Submission</router-link></li>
+                                            <li><router-link to="/components">Example-Components</router-link></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="#">Boats</a>
+                                        <ul>
+                                            <li><router-link to="/test">Boat-List</router-link></li>
+                                        </ul>
+                                    </li>
+                                    <li><router-link to="/register"><span class="fa fa-plus"></span>&ensp;Register</router-link></li>
+                                    <li><router-link to="/login"><span class="fa fa-lock"></span>&ensp;Login</router-link></li>
                             </ul>
                         </div>
                     </nav><!-- Main Menu End-->

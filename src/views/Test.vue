@@ -1,20 +1,11 @@
 <template>
     <div>
     <!--Page Title-->
-    <section class="page-title" style="background-image:url(images/background/4.jpg);">
-        <div class="auto-container">
-            
+    <section class="page-title" style="background-image:url(images/background/4.jpg);" id="maincontainer">
+         <div class="" id="searchform">
             <Search></Search>
-            <!--Title Box-->
-            <div class="title-box">
-            	<ul>
-                	<li><a href="#">Home</a></li>
-                    <li>Pages</li>
-                    <li class="active">Hotels</li>
-                </ul>
-                <h2>HOTEL LIST PAGE</h2>
-            </div>
-            
+         </div>
+        <div class="auto-container">
         </div>
     </section>
     <!--End Page Title-->
@@ -80,8 +71,12 @@
                             </ul>
                         </div>
                         <!--End Search Form-->
-                        
-                        <!--Hotel List-->
+                        <v-col
+                                    v-for="(item,idx) in unfilter"
+                                    :key="idx"
+                                    v-bind="{ [`xs${item.flex}`]: true }"
+                                >
+                        <!--Boat List-->
                         <div class="hotel-list">
                         	<div class="inner-box">
                             	<div class="row clearfix">
@@ -128,264 +123,40 @@
                                 <a href="hotel-detail.html" class="theme-btn btn-style-one">Book</a>
                             </div>
                         </div>
-                        
-                        <!--Hotel List-->
-                        <div class="hotel-list">
-                        	<div class="inner-box">
-                            	<div class="row clearfix">
-                                	<!--Image Column-->
-                                	<div class="image-column col-md-5 col-sm-5 col-xs-12">
-                                    	<div class="image">
-                                        	<a href="hotel-detail.html"><img src="images/resource/hotel-2.jpg" alt=""/></a>
-                                        </div>
-                                    </div>
-                                    <!--Content Column-->
-                                	<div class="content-column col-md-7 col-sm-7 col-xs-12">
-                                    	<div class="content">
-                                        	<div class="upper-box">
-                                            	<div class="row clearfix">
-                                                	<div class="column col-md-9 col-sm-12 col-xs-12">
-                                                    	<h2><a href="hotel-detail.html">live in an historic english castle!</a></h2>
-                                                        <!--Rating-->
-                                                        <div class="rating">
-                                                            <span class="fa fa-star"></span>
-                                                            <span class="fa fa-star"></span>
-                                                            <span class="fa fa-star"></span>
-                                                            <span class="fa fa-star"></span>
-                                                            <span class="light fa fa-star"></span>
-                                                        </div>
-                                                        <div class="reviews">258 guest reviews</div>
-                                                    </div>
-                                                    <div class="column col-md-3 col-sm-12 col-xs-12">
-                                                    	<div class="price">$ <span class="theme_color">120</span><br> <span class="total-days">per night</span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolor. Aenean massa.etuer adipiscing elit. Aeneanmodo ligula ege</div>
-                                            <ul class="hotel-items">
-                                            	<li><span class="fa fa-wifi"></span></li>
-                                                <li><span class="fa fa-cutlery"></span></li>
-                                                <li><span class="fa fa-cab"></span></li>
-                                                <li><span class="fa fa-bed"></span></li>
-                                                <li><span class="fa fa-coffee"></span></li>
-                                                <li><span class="fa fa-trophy"></span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="hotel-detail.html" class="theme-btn btn-style-one">Book</a>
+                        </v-col>
+                        <v-container class="pa-2" fluid>
+                            <div>
+                                <div class="output">
+                                TEST
                             </div>
-                        </div>
-                        <!--End Hotel List-->
-                        
-                        <!--Hotel List-->
-                        <div class="hotel-list">
-                        	<div class="inner-box">
-                            	<div class="row clearfix">
-                                	<!--Image Column-->
-                                	<div class="image-column col-md-5 col-sm-5 col-xs-12">
-                                    	<div class="image">
-                                        	<a href="hotel-detail.html"><img src="images/resource/hotel-3.jpg" alt=""/></a>
-                                        </div>
-                                    </div>
-                                    <!--Content Column-->
-                                	<div class="content-column col-md-7 col-sm-7 col-xs-12">
-                                    	<div class="content">
-                                        	<div class="upper-box">
-                                            	<div class="row clearfix">
-                                                	<div class="column col-md-9 col-sm-12 col-xs-12">
-                                                    	<h2><a href="hotel-detail.html">threehouse/casabarthel</a></h2>
-                                                        <!--Rating-->
-                                                        <div class="rating">
-                                                            <span class="fa fa-star"></span>
-                                                            <span class="fa fa-star"></span>
-                                                            <span class="fa fa-star"></span>
-                                                            <span class="fa fa-star"></span>
-                                                            <span class="light fa fa-star"></span>
-                                                        </div>
-                                                        <div class="reviews">269 guest reviews</div>
-                                                    </div>
-                                                    <div class="column col-md-3 col-sm-12 col-xs-12">
-                                                    	<div class="price">$ <span class="theme_color">120</span><br> <span class="total-days">per night</span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolor. Aenean massa.etuer adipiscing elit. Aeneanmodo ligula ege</div>
-                                            <ul class="hotel-items">
-                                            	<li><span class="fa fa-wifi"></span></li>
-                                                <li><span class="fa fa-cutlery"></span></li>
-                                                <li><span class="fa fa-cab"></span></li>
-                                                <li><span class="fa fa-bed"></span></li>
-                                                <li><span class="fa fa-coffee"></span></li>
-                                                <li><span class="fa fa-trophy"></span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="hotel-detail.html" class="theme-btn btn-style-one">Book</a>
+                            <input v-model="element" placeholder="edit me">
+                            <button v-on:click="add(element)">Add to List</button>
+                            <p>Test-Liste: {{ TESTLIST }}</p>
+                            <v-row>
+                                <v-col
+                                    v-for="(item,idx) in unfilter"
+                                    :key="idx"
+                                    v-bind="{ [`xs${item.flex}`]: true }"
+                                >
+                                    <v-card>
+                                        <v-img class="white--text" height="200px" src="https://cdn.vuetifyjs.com/images/cards/docks.jpg">
+                                            <v-card-title class="align-end fill-height">{{item.name}}</v-card-title>
+                                        </v-img>
+                                        <v-card-text>
+                                            <span class="text--primary">
+                                                <span>Kategorie: {{item.category}}</span><br>
+                                                <span>Länge: {{item.length}}</span>
+                                            </span>
+                                        </v-card-text>
+                                        <v-card-actions>
+                                            <v-btn textcolor="orange"> Share</v-btn>
+                                            <v-btn text color="orange">Explore</v-btn>
+                                        </v-card-actions>
+                                    </v-card>
+                                </v-col>
+                            </v-row>
                             </div>
-                        </div>
-                        <!--End Hotel List-->
-                        
-                        <!--Hotel List-->
-                        <div class="hotel-list">
-                        	<div class="inner-box">
-                            	<div class="row clearfix">
-                                	<!--Image Column-->
-                                	<div class="image-column col-md-5 col-sm-5 col-xs-12">
-                                    	<div class="image">
-                                        	<a href="hotel-detail.html"><img src="images/resource/hotel-4.jpg" alt=""/></a>
-                                        </div>
-                                    </div>
-                                    <!--Content Column-->
-                                	<div class="content-column col-md-7 col-sm-7 col-xs-12">
-                                    	<div class="content">
-                                        	<div class="upper-box">
-                                            	<div class="row clearfix">
-                                                	<div class="column col-md-9 col-sm-12 col-xs-12">
-                                                    	<h2><a href="hotel-detail.html">trullo aromatic green</a></h2>
-                                                        <!--Rating-->
-                                                        <div class="rating">
-                                                            <span class="fa fa-star"></span>
-                                                            <span class="fa fa-star"></span>
-                                                            <span class="fa fa-star"></span>
-                                                            <span class="fa fa-star"></span>
-                                                            <span class="light fa fa-star"></span>
-                                                        </div>
-                                                        <div class="reviews">165 guest reviews</div>
-                                                    </div>
-                                                    <div class="column col-md-3 col-sm-12 col-xs-12">
-                                                    	<div class="price">$ <span class="theme_color">120</span><br> <span class="total-days">per night</span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolor. Aenean massa.etuer adipiscing elit. Aeneanmodo ligula ege</div>
-                                            <ul class="hotel-items">
-                                            	<li><span class="fa fa-wifi"></span></li>
-                                                <li><span class="fa fa-cutlery"></span></li>
-                                                <li><span class="fa fa-cab"></span></li>
-                                                <li><span class="fa fa-bed"></span></li>
-                                                <li><span class="fa fa-coffee"></span></li>
-                                                <li><span class="fa fa-trophy"></span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="hotel-detail.html" class="theme-btn btn-style-one">Book</a>
-                            </div>
-                        </div>
-                        <!--End Hotel List-->
-                        
-                        <!--Hotel List-->
-                        <div class="hotel-list">
-                        	<div class="inner-box">
-                            	<div class="row clearfix">
-                                	<!--Image Column-->
-                                	<div class="image-column col-md-5 col-sm-5 col-xs-12">
-                                    	<div class="image">
-                                        	<a href="hotel-detail.html"><img src="images/resource/hotel-5.jpg" alt=""/></a>
-                                        </div>
-                                    </div>
-                                    <!--Content Column-->
-                                	<div class="content-column col-md-7 col-sm-7 col-xs-12">
-                                    	<div class="content">
-                                        	<div class="upper-box">
-                                            	<div class="row clearfix">
-                                                	<div class="column col-md-9 col-sm-12 col-xs-12">
-                                                    	<h2><a href="hotel-detail.html">trullo aromatic green</a></h2>
-                                                        <!--Rating-->
-                                                        <div class="rating">
-                                                            <span class="fa fa-star"></span>
-                                                            <span class="fa fa-star"></span>
-                                                            <span class="fa fa-star"></span>
-                                                            <span class="fa fa-star"></span>
-                                                            <span class="light fa fa-star"></span>
-                                                        </div>
-                                                        <div class="reviews">165 guest reviews</div>
-                                                    </div>
-                                                    <div class="column col-md-3 col-sm-12 col-xs-12">
-                                                    	<div class="price">$ <span class="theme_color">120</span><br> <span class="total-days">per night</span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolor. Aenean massa.etuer adipiscing elit. Aeneanmodo ligula ege</div>
-                                            <ul class="hotel-items">
-                                            	<li><span class="fa fa-wifi"></span></li>
-                                                <li><span class="fa fa-cutlery"></span></li>
-                                                <li><span class="fa fa-cab"></span></li>
-                                                <li><span class="fa fa-bed"></span></li>
-                                                <li><span class="fa fa-coffee"></span></li>
-                                                <li><span class="fa fa-trophy"></span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="hotel-detail.html" class="theme-btn btn-style-one">Book</a>
-                            </div>
-                        </div>
-                        <!--End Hotel List-->
-                        
-                        <!--Hotel List-->
-                        <div class="hotel-list">
-                        	<div class="inner-box">
-                            	<div class="row clearfix">
-                                	<!--Image Column-->
-                                	<div class="image-column col-md-5 col-sm-5 col-xs-12">
-                                    	<div class="image">
-                                        	<a href="hotel-detail.html"><img src="images/resource/hotel-6.jpg" alt=""/></a>
-                                        </div>
-                                    </div>
-                                    <!--Content Column-->
-                                	<div class="content-column col-md-7 col-sm-7 col-xs-12">
-                                    	<div class="content">
-                                        	<div class="upper-box">
-                                            	<div class="row clearfix">
-                                                	<div class="column col-md-9 col-sm-12 col-xs-12">
-                                                    	<h2><a href="hotel-detail.html">trullo aromatic green</a></h2>
-                                                        <!--Rating-->
-                                                        <div class="rating">
-                                                            <span class="fa fa-star"></span>
-                                                            <span class="fa fa-star"></span>
-                                                            <span class="fa fa-star"></span>
-                                                            <span class="fa fa-star"></span>
-                                                            <span class="light fa fa-star"></span>
-                                                        </div>
-                                                        <div class="reviews">165 guest reviews</div>
-                                                    </div>
-                                                    <div class="column col-md-3 col-sm-12 col-xs-12">
-                                                    	<div class="price">$ <span class="theme_color">120</span><br> <span class="total-days">per night</span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolor. Aenean massa.etuer adipiscing elit. Aeneanmodo ligula ege</div>
-                                            <ul class="hotel-items">
-                                            	<li><span class="fa fa-wifi"></span></li>
-                                                <li><span class="fa fa-cutlery"></span></li>
-                                                <li><span class="fa fa-cab"></span></li>
-                                                <li><span class="fa fa-bed"></span></li>
-                                                <li><span class="fa fa-coffee"></span></li>
-                                                <li><span class="fa fa-trophy"></span></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="hotel-detail.html" class="theme-btn btn-style-one">Book</a>
-                            </div>
-                        </div>
-                        <!--End Hotel List-->
-                        
-                        <div class="pagination-box text-right">
-                            <!--Styled Pagination-->
-                             <div class="styled-pagination text-center">
-                                <ul>
-                                    <li class="prev"><a href="#"><span class="fa fa-angle-left"></span></a></li>
-                                    <li><a href="#">1</a></li>
-                                    <li><a href="#" class="active">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li class="next"><a href="#"><span class="fa fa-angle-right"></span></a></li>
-                                </ul>
-                            </div>
-                        </div>
+                         </v-container>   
                     </div>
                 </div>
                 
@@ -527,46 +298,6 @@
                         </div>
                     </aside>
                 </div>
-                
-                
-                <v-card
-    max-width="600"
-    class="mx-auto"
-    >
-        <v-container class="pa-2" fluid>
-            <div>
-                <div class="output">
-                    TEST
-                </div>
-                <input v-model="element" placeholder="edit me">
-                <button v-on:click="add(element)">Add to List</button>
-                <p>Test-Liste: {{ TESTLIST }}</p>
-                <v-row>
-                    <v-col
-                    v-for="item in unfilter"
-                    :key="item"
-                    v-bind="{ [`xs${item.flex}`]: true }"
-                    >
-                         <v-card>
-                            <v-img class="white--text" height="200px" src="https://cdn.vuetifyjs.com/images/cards/docks.jpg">
-                                <v-card-title class="align-end fill-height">{{item.name}}</v-card-title>
-                            </v-img>
-                            <v-card-text>
-                                <span class="text--primary">
-                                    <span>Kategorie: {{item.category}}</span><br>
-                                    <span>Länge: {{item.length}}</span>
-                                </span>
-                            </v-card-text>
-                            <v-card-actions>
-                                <v-btn textcolor="orange"> Share</v-btn>
-                                <v-btn text color="orange">Explore</v-btn>
-                             </v-card-actions>
-                         </v-card>
-                    </v-col>
-                </v-row>
-            </div>
-        </v-container>
-    </v-card>      
             </div>
         </div>
     </div>
@@ -579,7 +310,7 @@ import exampleList from '../assets/datasrc/example.json';
 import Search from '../components/SearchBar';
 
 export default {
-    comments: {
+    components: {
         Search
     },
     computed: {
@@ -598,3 +329,26 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+#mainpic
+{
+    width: 100%;
+    height: auto;
+    opacity: 0.75;
+}
+
+#maincontainer {
+    position: relative;
+    text-align: left;
+    height: auto;
+}
+#searchform {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+</style>

@@ -14,8 +14,7 @@
             format="YYYY-MM-DD hh:mm"
             :time-picker-options="{ start: '08:00', step: '00:30', end: '22:20' }"
             confirm
-            width="100%"
-            change="changed">
+            width="100%">
           </date-picker>
         </div>
         <div class="form-group col-md-3 col-sm-6 col-xs-12">
@@ -84,6 +83,14 @@
         !this.$v.name.required && errors.push('Name is required.')
         return errors
       },
+      changedStart() {
+        return this.starttime
+      }
+    },
+    watch: {
+      changedStart(value) {
+        this.endtime= ''
+      }
     },
 
     methods: {
@@ -91,12 +98,9 @@
         console.log(this.starttime);
         console.log(this.city);
         console.log(this.endtime);
-        console.log(this.selected)
+        console.log(this.selected);
+        this.$router.push('/test')
         //this.$v.$touch()
-      },
-      changed() {
-        console.log("efg")
-        this.endtime= ''
       }
     },
   }
